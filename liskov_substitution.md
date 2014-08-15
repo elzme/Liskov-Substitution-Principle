@@ -16,7 +16,7 @@ Let's look at a Tic Tac Toe program, in which a human can play against
 several different
 computers, and each computer uses a different strategy when choosing a
 move: an unbeatable
-strategy, an easy strategy, etc. If we consider each player, whether it
+strategy, an easy strategy, etc. If we consider each player whether it
 be a computer or a human, as a *subtype* of
 ```Player```, then each player should be interchangable with one
 another. So, as we can see below
@@ -25,11 +25,9 @@ can simply call ```get_move``` on it.
 
 ```
 defmodule Game
-
   def game_loop do
     player.get_move
   end
-
 end
 ```
 
